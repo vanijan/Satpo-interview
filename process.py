@@ -47,7 +47,7 @@ if __name__ == "__main__":
             cinzdomy_final["Vymezené byty"] = cinzdomy_final["Vymezené byty"].apply(lambda x: True if x == "Ano" else False)
             data = cinzdomy_final.values.tolist()
 
-            # 6. Insert the data into the "cinzovni_domy" table using the INSERT_DATA_CINZOVNI_DOMY_QUERY
+            # 6. Insert the data into the "cinzovni_domy" table
             cursor.executemany(INSERT_DATA_CINZOVNI_DOMY_QUERY, data)
 
             conn.commit()
