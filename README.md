@@ -30,4 +30,13 @@ Při změně dat lze opakovaně pustit skript process.py znovu a pro stejné ID 
 Jsou uloženy v souboru queries.py.
 
 ## Úkol 2
-Report je uložen v souboru 
+Report je uložen v souboru report.pbix.
+
+## Úkol 3
+
+Pro reverzní geokódování jsem našel toto API, které je do určitého usage zdarma: https://nominatim.openstreetmap.org/ui/reverse.html?format=html&lat=50.08861&lon=14.42212
+
+Jinak např. mapy.cz nabízejí svoje placené API dokumentace zde
+api.mapy.com/v1/docs/geocode/#/geocoding/api_rgeocode_v1_rgeocode_get
+
+Pomocí těchto API by se například daly doplnit chybějící adresy v datech :\)
